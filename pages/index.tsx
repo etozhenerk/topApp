@@ -1,5 +1,5 @@
 import { GetStaticProps } from "next";
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { HTag, Ptag, Rating, Tag } from "../components";
 import { Button } from "../components";
 import { withLayout } from "../layout/Layout";
