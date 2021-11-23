@@ -1,4 +1,4 @@
-import { PtagProps } from "./Ptag.prop";
+import { PtagProps } from "./Ptag.props";
 import styles from "./Ptag.module.css";
 import cn from "classnames";
 
