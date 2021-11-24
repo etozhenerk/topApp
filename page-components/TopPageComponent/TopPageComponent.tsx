@@ -3,6 +3,7 @@ import cn from "classnames";
 import { TopPageComponentProps } from "./TopPageComponent.props";
 import { Card, HhData, HTag, Tag } from "../../components";
 import React from "react";
+import { TopLevelCategory } from "../../interfaces/page.interface";
 
 export const TopPageComponent = ({ firstCategory, page, products }: TopPageComponentProps): JSX.Element => {
     return (
@@ -23,7 +24,7 @@ export const TopPageComponent = ({ firstCategory, page, products }: TopPageCompo
                     hh.ru
                 </Tag>
             </div>
-            <HhData {...page.hh} />
+            {firstCategory === TopLevelCategory.Courses && <HhData {...page.hh} />}
         </div>
     );
 };
